@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    font-family: Arial;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.navbar-container {
+    background-color: rgb(31, 29, 29);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+
+    border-bottom-right-radius: 20px;
+    width: 100%;
+
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-button {
+    display: none;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 5px;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2px 4px;
+}
+
+.nav-button:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.nav-button-line {
+    border-bottom: 1px solid white;
+    width: 80%;
+}
+
+.navbrand {
+    color: white;
+    margin-left: 5%;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+.nav-items {
+    width: 290px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-device-items {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+
+    background-color: rgb(31, 29, 29);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 4%;
+    height: 17vh;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 5%;
+    padding: 5px;
+}
+
+.nav-link:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.nav-link-button {
+    font-weight: bold;
+    color: white;
+    background-color: violet;
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+}
+
+.nav-link-button:hover {
+    background-color: rgb(219, 116, 219);
+}
+
+
+/* Hero Section */
+.hero-section {
+    background-color: rgb(36, 33, 33);
+    height: 85vh;
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-image {
+    border-radius: 50%;
+    border: 7px solid rgb(0, 255, 64);
+    padding: 5px;
+}
+
+.hero-title {
+    color: white;
+    width: 50%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title h1{
+    font-size: 3em;
+}
+
+.hero-title button {
+    border: 1px solid rgb(0, 255, 64);
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.hero-title button:hover {
+    background-color: rgb(0, 255, 64);
+    color: black;
+}
+
+/* Skill Section */
+.skill-section {
+    background-color: rgb(27, 25, 25);
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-line {
+    width:30%;
+}
+
+.skill-title {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: white;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    overflow-y: scroll;
+}
+
+.skill-list::-webkit-scrollbar {
+    display: none;
+}
+
+.skill-box {
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.3);
+    height: 200px;
+    width: 260px;
+
+    padding: 20px;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.skill-box:hover {
+    background-color: rgb(36, 33, 36);
+    transform: scale(1.05);
+}
+
+.skill-box h5 {
+    text-align: center;
+    color: white;
+}
+
+.skill-box p {
+    margin-top: 8px;
+    color: rgb(187, 187, 187)
+}
+
+.skill-bar-progress-10 {
+    background-color: violet;
+    width: 10%;
+    height: 100%;
+    border-radius: 7px;
+    color: white;
+    text-align: right;
+}
+.skill-bar-progress-90 {
+    background-color: violet;
+    width: 90%;
+    height: 100%;
+    border-radius: 7px;
+    color: white;
+    text-align: right;
+}
+.skill-bar-progress-30 {
+    background-color: violet;
+    width: 30%;
+    height: 100%;
+    border-radius: 7px;
+    color: white;
+    text-align: right;
+}
+
+.skill-bar {
+    height: 19px;
+    border-radius: 7px;
+    border: 2px solid white;
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 280px) {
+    .hero-section {
+        height: 80vh;
+    }
+
+    .hero-title button {
+        width: 50%;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .nav-button {
+        display: flex
+    }
+
+    .navbrand {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .nav-items {
+        display: none;
+    }
+
+    .nav-button {
+        display: flex;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-section {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .hero-title {
+        width: 90%;
+        align-items: center;
+    }
+    .hero-title h1{
+        padding-top: 10%;
+        text-align: center;
+        font-size: 1em;
+    }
+    .hero-title button {
+        width: 50%;
+    }
+
+    .hero-image {
+        border-radius: 15px;
+    }
+
+    .skill-box h5 {
+        font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (min-width: 414px) {
+    .nav-items {
+        display: none;
+    }
+
+    .nav-device-items {
+        justify-content: flex-start;
+        height: 13vh;
+        padding-left: 3%;
+        font-size: 1.2em;
+    }
+
+    .nav-button {
+        display: flex;
+    }
+
+    .hero-section {
+        padding-top: 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .hero-title {
+        width: 87%;
+        align-items: center;
+    }
+    .hero-title h1{
+        padding-top: 13%;
+        text-align: center;
+        font-size: 1.35em;
+    }
+
+    .hero-title button {
+        width: 35%;
+    }
+
+    .hero-image {
+        border-radius: 15px;
+    }
+
+    .skill-box h5 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (min-width: 390px) {
+    .nav-items {
+        display: none;
+    }
+
+    .nav-device-items {
+        justify-content: flex-start;
+        height: 13vh;
+        padding-left: 3%;
+        font-size: 1.2em;
+    }
+
+    .nav-button {
+        display: flex;
+    }
+
+    .hero-section {
+        padding-top: 40px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+    .hero-title {
+        width: 87%;
+        align-items: center;
+    }
+    .hero-title h1{
+        padding-top: 13%;
+        text-align: center;
+        font-size: 1.35em;
+    }
+
+    .hero-title button {
+        width: 40%;
+    }
+
+    .hero-image {
+        border-radius: 15px;
+    }
+
+    .skill-box h5 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (min-width: 540px) {
+    .hero-section {
+        height: 100vh;
+    }
+
+    .nav-device-items {
+        justify-content: flex-start;
+        height: 18vh;
+        padding-left: 4%;
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .navbrand {
+        font-size: 2em;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav-device-items {
+        justify-content: flex-start;
+        height: 13vh;
+        padding-left: 4%;
+        font-size: 1.5em;
+    }
+
+    .nav-button {
+        display: flex;
+        transform: scale(1.5);
+        margin-right: 20px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        height: 60vh;
+    }
+    .hero-title {
+        width: 50%;
+        align-items: start;
+    }
+    .hero-title h1{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .hero-image {
+        border-radius: 50%;
+    }
+
+    .skill-box h5 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .navbrand {
+        font-size: 2em;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav-device-items {
+        justify-content: flex-start;
+        height: 13vh;
+        padding-left: 4%;
+        font-size: 1.5em;
+    }
+
+    .nav-button {
+        display: flex;
+        transform: scale(1.5);
+        margin-right: 20px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        height: 60vh;
+    }
+    .hero-title {
+        width: 50%;
+        align-items: start;
+    }
+    .hero-title h1{
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .hero-image {
+        border-radius: 50%;
+    }
+
+    .skill-box h5 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (min-width: 912px) {
+    .navbrand {
+        font-size: 2em;
+    }
+
+    .nav-items {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        font-size: 1.3em;
+    }
+
+    .nav-button {
+        display: none;
+    }
+    .nav-link {
+        padding: 7px;
+    }
+
+    .nav-link-button {
+        padding: 7px 12px 7px 12px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        height: 50vh;
+    }
+
+    .hero-title {
+        width: 50%;
+    }
+    .hero-title h1{
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .hero-image {
+        border-radius: 50%;
+    }
+
+    .skill-box h5 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbrand {
+        font-size: 1.5em;
+    }
+
+    .nav-items {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        font-size: 1.3em;
+    }
+
+    .nav-button {
+        display: none;
+    }
+    .nav-link {
+        padding: 7px;
+    }
+
+    .nav-link-button {
+        padding: 7px 12px 7px 12px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        height: 85vh;
+    }
+
+    .hero-title {
+        width: 50%;
+    }
+
+    .hero-title button {
+        width: 25%;
+    }
+
+    .hero-title h1{
+        text-align: left;
+        font-size: 2.5em;
+    }
+
+    .hero-image {
+        border-radius: 50%;
+    }
+
+    .skill-box h5 {
+        font-size: 1.3em;
+    }
+
+}
+
